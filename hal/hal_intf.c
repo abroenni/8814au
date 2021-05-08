@@ -284,6 +284,7 @@ u8 rtw_hal_rfpath_init(_adapter *adapter)
 
 #ifdef CONFIG_RTL8814A
 if (IS_HARDWARE_TYPE_8814A(adapter)) {
+	RTW_INFO("Hardware Adapter: 8814AU\n");
 	enum bb_path tx_bmp, rx_bmp;
 	hal_data->rf_type = rtl8814a_rfpath_decision(adapter);
 	rf_type_to_default_trx_bmp(hal_data->rf_type, &tx_bmp, &rx_bmp);
