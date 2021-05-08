@@ -10,7 +10,7 @@ OPTIONS_FILE="8814au.conf"
 DRV_DIR="$(pwd)"
 KRNL_VERSION="$(uname -r)"
 
-NO_PROMPT=0
+NO_PROMPT=1
 
 clear
 echo "Running ${SCRIPT_NAME} version ${SCRIPT_VERSION}"
@@ -53,7 +53,7 @@ echo "Starting installation."
 echo "Copying source files to: /usr/src/${DRV_NAME}-${DRV_VERSION}"
 cp -rf "${DRV_DIR}" /usr/src/${DRV_NAME}-${DRV_VERSION}
 echo "Copying ${OPTIONS_FILE} to: /etc/modprobe.d"
-cp -f ${OPTIONS_FILE} /etc/modprobe.d
+#cp -f ${OPTIONS_FILE} /etc/modprobe.d
 
 dkms add -m ${DRV_NAME} -v ${DRV_VERSION}
 RESULT=$?
