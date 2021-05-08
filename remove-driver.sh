@@ -25,7 +25,7 @@ RESULT=$?
 if [[ ("$RESULT" = "0")||("$RESULT" = "3") ]]
 then
 	echo "Deleting ${OPTIONS_FILE} from: /etc/modprobe.d"
-	rm -f /etc/modprobe.d/${OPTIONS_FILE}
+	#rm -f /etc/modprobe.d/${OPTIONS_FILE}
 	echo "Deleting source files from: /usr/src/${DRV_NAME}-${DRV_VERSION}"
 	rm -rf /usr/src/${DRV_NAME}-${DRV_VERSION}
 
@@ -36,11 +36,11 @@ else
 	exit $RESULT
 fi
 
-read -p "Are you ready to reboot now? [y/n] " -n 1 -r
-echo    # move to a new line
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    reboot
-fi
+#read -p "Are you ready to reboot now? [y/n] " -n 1 -r
+#echo    # move to a new line
+#if [[ $REPLY =~ ^[Yy]$ ]]
+#then
+#    reboot
+#fi
 
 exit 0
