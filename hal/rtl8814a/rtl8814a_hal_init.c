@@ -1133,17 +1133,8 @@ enum rf_type rtl8814a_rfpath_decision(_adapter *adapter)
 	/* if driver doesn't set rf_path in registry, use the value of EEPROM */
 	if (!RF_TYPE_VALID(regpriv->rf_path)) {
 		RTW_INFO("Using rf value from EEPROM to set rf_path\n");
-		if ((trx_antenna == RF_4T4R || trx_antenna == RF_3T3R)
-			#ifdef CONFIG_USB_HCI
-			&& IS_SUPER_SPEED_USB(adapter)
-			#endif
-		){
+		if (trx_antenna == RF_4T4R || trx_antenna == RF_3T3R){
 			RTW_INFO("TRx Antennas is 4T4R or 3T3R\n");
-			RTW_INFO("detected USB Super Speed\n");
-			rf_path = RF_3T3R;
-		}
-		else if (trx_antenna == RF_4T4R || trx_antenna == RF_3T3R){
-			RTW_INFO("Assuming no USB Super Speed\n");
 			rf_path = RF_3T3R;
 		}
 		else if (trx_antenna == RF_2T4R){
