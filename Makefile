@@ -57,9 +57,9 @@ CONFIG_LED_CONTROL = y
 CONFIG_LED_ENABLE = y
 ########################## Features ###########################
 CONFIG_MP_INCLUDED = y
-CONFIG_POWER_SAVING = n
-CONFIG_IPS_MODE = default
-CONFIG_LPS_MODE = default
+CONFIG_POWER_SAVING = n				# Enable Main Power Saving Function
+CONFIG_IPS_MODE = default			# IPS (Inactive Power Saving) Function. default: Setting by driver; 0: Disable IPS; 1: Enable IPS
+CONFIG_LPS_MODE = default      		# LPS (Leisure Power Saving) Function. default: Setting by driver; 0: Disable LPS; 1: Enable LPS; 2: Enable LPS with clock gating
 CONFIG_USB_AUTOSUSPEND = n
 CONFIG_HW_PWRP_DETECTION = n
 CONFIG_BT_COEXIST = n
