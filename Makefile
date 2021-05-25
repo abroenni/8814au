@@ -100,10 +100,14 @@ CONFIG_RTW_DEBUG = n
 # default log level is _DRV_INFO_ = 4,
 # please refer to "How_to_set_driver_debug_log_level.doc" to set the available level.
 <<<<<<< HEAD
+<<<<<<< HEAD
 CONFIG_RTW_LOG_LEVEL = 2
 =======
 CONFIG_RTW_LOG_LEVEL = 6
 >>>>>>> 8d4294e ([no merge] better debug settings)
+=======
+CONFIG_RTW_LOG_LEVEL = 6
+>>>>>>> 15a82cade1de34b67d529e47cfaccae519619f87
 
 # enable /proc/net/rtlxxxx/ debug interfaces
 CONFIG_PROC_DEBUG = y
