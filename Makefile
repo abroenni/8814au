@@ -56,6 +56,7 @@ CONFIG_GSPI_HCI = n
 CONFIG_LED_CONTROL = y
 CONFIG_LED_ENABLE = y
 ########################## Features ###########################
+CONFIG_NET_NS = y
 CONFIG_MP_INCLUDED = y
 CONFIG_POWER_SAVING = n				# Enable Main Power Saving Function
 CONFIG_IPS_MODE = default			# IPS (Inactive Power Saving) Function. default: Setting by driver; 0: Disable IPS; 1: Enable IPS
