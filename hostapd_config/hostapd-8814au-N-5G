@@ -34,8 +34,8 @@ country_code=AU
 #rsn_preauth=1
 #require_ht=1
 #require_vht=1
-ht_capab=[LDPC][GF][HT40-][HT40+][SHORT-GI-20][SHORT-GI-40][TX-STBC][RX-STBC3][MAX-AMSDU-7935]
-#vht_capab=[RXLDPC][MAX-MPDU-11454][SHORT-GI-80][RX-STBC-1][TX-STBC-2BY1][SU-BEAMFORMEE][HTC-VHT]
+ht_capab=[LDPC][GF][HT40-][HT40+][SHORT-GI-20][SHORT-GI-40][TX-STBC][RX-STBC123][MAX-AMSDU-7935]
+#vht_capab=[RXLDPC][MAX-MPDU-11454][SHORT-GI-80][RX-STBC-3][TX-STBC-2BY1][SU-BEAMFORMEE][HTC-VHT]
 # vht_oper_chwidth is to allow 80Mhz channel width
 #vht_oper_chwidth=1
 #vht_oper_centr_freq_seg0_idx=42
